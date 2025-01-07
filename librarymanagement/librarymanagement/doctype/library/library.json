@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:library_name",
+ "creation": "2025-01-07 11:18:29.494483",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "library_name",
+  "photo_of_library",
+  "address",
+  "city",
+  "location",
+  "opening_hrs",
+  "authorised_by",
+  "code",
+  "html",
+  "attach",
+  "complete",
+  "json_data",
+  "article"
+ ],
+ "fields": [
+  {
+   "fieldname": "library_name",
+   "fieldtype": "Data",
+   "label": "Library Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "photo_of_library",
+   "fieldtype": "Attach Image",
+   "label": "Photo Of library"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "City"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "Location"
+  },
+  {
+   "fieldname": "opening_hrs",
+   "fieldtype": "Data",
+   "label": "Opening Hrs"
+  },
+  {
+   "fieldname": "authorised_by",
+   "fieldtype": "Signature",
+   "label": "Authorised By"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Code",
+   "label": "Code"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "label": "html"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "complete",
+   "fieldtype": "Autocomplete",
+   "label": "complete"
+  },
+  {
+   "fieldname": "json_data",
+   "fieldtype": "JSON",
+   "label": "Json Data"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Table MultiSelect",
+   "label": "article",
+   "options": "Article"
+  }
+ ],
+ "image_field": "photo_of_library",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-07 13:48:56.312143",
+ "modified_by": "Administrator",
+ "module": "Librarymanagement",
+ "name": "Library",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Website Manager",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
