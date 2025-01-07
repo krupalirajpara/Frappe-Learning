@@ -16,26 +16,34 @@
   {
    "fieldname": "article",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Article",
-   "options": "Article"
+   "options": "Article",
+   "reqd": 1
   },
   {
    "fieldname": "library_member",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "library Member ",
    "options": "Library Member",
+   "reqd": 1,
    "unique": 1
   },
   {
    "fieldname": "type",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Type",
-   "options": "Issue\nReturn"
+   "options": "Issue\nReturn",
+   "reqd": 1
   },
   {
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date"
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
   },
   {
    "fieldname": "amended_from",
@@ -51,7 +59,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-06 17:27:16.867285",
+ "modified": "2025-01-07 17:55:01.704820",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library Transaction",

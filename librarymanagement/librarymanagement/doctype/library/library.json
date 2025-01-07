@@ -25,6 +25,7 @@
    "fieldname": "library_name",
    "fieldtype": "Data",
    "label": "Library Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -35,7 +36,8 @@
   {
    "fieldname": "address",
    "fieldtype": "Data",
-   "label": "Address"
+   "label": "Address",
+   "reqd": 1
   },
   {
    "fieldname": "city",
@@ -94,7 +96,7 @@
  "image_field": "photo_of_library",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-07 13:48:56.312143",
+ "modified": "2025-01-07 18:04:27.778843",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library",
