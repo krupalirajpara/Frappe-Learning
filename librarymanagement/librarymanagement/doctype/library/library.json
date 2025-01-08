@@ -17,8 +17,7 @@
   "html",
   "attach",
   "complete",
-  "json_data",
-  "article"
+  "json_data"
  ],
  "fields": [
   {
@@ -62,6 +61,7 @@
    "label": "Authorised By"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "code",
    "fieldtype": "Code",
    "label": "Code"
@@ -85,18 +85,12 @@
    "fieldname": "json_data",
    "fieldtype": "JSON",
    "label": "Json Data"
-  },
-  {
-   "fieldname": "article",
-   "fieldtype": "Table MultiSelect",
-   "label": "article",
-   "options": "Article"
   }
  ],
  "image_field": "photo_of_library",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-07 18:04:27.778843",
+ "modified": "2025-01-08 14:59:42.436972",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library",
