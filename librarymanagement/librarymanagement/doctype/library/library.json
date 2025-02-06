@@ -1,11 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:library_name",
+ "autoname": "format:Lib-{####}",
  "creation": "2025-01-07 11:18:29.494483",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "library_section",
   "library_name",
   "photo_of_library",
   "address",
@@ -17,12 +18,16 @@
   "html",
   "attach",
   "complete",
-  "json_data"
+  "json_data",
+  "article"
  ],
  "fields": [
   {
    "fieldname": "library_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
    "label": "Library Name",
    "reqd": 1,
    "unique": 1
@@ -43,7 +48,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "City"
+   "label": "City",
+   "reqd": 1
   },
   {
    "fieldname": "location",
@@ -85,16 +91,28 @@
    "fieldname": "json_data",
    "fieldtype": "JSON",
    "label": "Json Data"
+  },
+  {
+   "fieldname": "article",
+   "fieldtype": "Table",
+   "label": "Article",
+   "options": "Article"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "library_section",
+   "fieldtype": "Section Break",
+   "label": "library"
   }
  ],
  "image_field": "photo_of_library",
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-08 14:59:42.436972",
+ "modified": "2025-02-05 15:31:16.814370",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

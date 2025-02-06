@@ -16,4 +16,19 @@ frappe.ui.form.on('Library Member', {
     })
     }
 });
+
+
+// frappe.ui.form.on('Library Member', {
+//     refresh: function(frm) {
+//         frm.add_custom_button(__('Click Me'), function() {
+//             frappe.call({
+//                 method: "library_management.library_management.doctype.library_member.custom_button_action",
+//                 args: { docname: frm.doc.name },
+//                 callback: function(r) {
+//                     frappe.msgprint(r.message);
+//                 }
+//             });
+//         }).addClass("btn-primary");
+//     }
+// });
    

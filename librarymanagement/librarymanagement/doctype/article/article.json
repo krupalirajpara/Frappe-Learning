@@ -6,6 +6,7 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "section_break_dqzt",
   "article_name",
   "image",
   "description",
@@ -34,32 +35,38 @@
   {
    "fieldname": "description",
    "fieldtype": "Text Editor",
+   "in_list_view": 1,
    "label": "Description"
   },
   {
    "fieldname": "author",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Author"
   },
   {
    "fieldname": "isbn",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "ISBN"
   },
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Issued\navailable"
   },
   {
    "fieldname": "publisher",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Publisher"
   },
   {
    "fieldname": "document_type",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "in_preview": 1,
    "label": "Link Member",
    "options": "DocType",
@@ -68,40 +75,34 @@
   {
    "fieldname": "purchase_name",
    "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
    "label": "Purchase Name",
    "options": "document_type"
   },
   {
    "fieldname": "library_location",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "in_preview": 1,
    "label": "Available In Libraries",
    "options": "Library"
+  },
+  {
+   "fieldname": "section_break_dqzt",
+   "fieldtype": "Section Break"
   }
  ],
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "istable": 1,
  "links": [],
- "modified": "2025-01-08 14:45:32.416009",
+ "modified": "2025-02-03 14:50:55.434692",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Article",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
- "permissions": [
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "System Manager",
-   "share": 1,
-   "write": 1
-  }
- ],
+ "permissions": [],
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

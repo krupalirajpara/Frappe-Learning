@@ -17,13 +17,13 @@ class LibraryTransaction(Document):
 		elif self.type == "Return":
 			self.validate_return()
 			article = frappe.get_doc("Article", self.article)
-			article.status = "Available"
+			article.status = "available"
 			article.save()
 
 	def validate_issue(self):
 		self.validate_membership()
 		article = frappe.get_doc("Article", self.article)
-		if article.status == "Issued":
+		if article.status == "Issue":
 			frappe.throw("Article is already issued by another member")
 
 	def validate_return(self):

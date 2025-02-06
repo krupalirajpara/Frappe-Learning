@@ -7,12 +7,15 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "library_details_section",
   "library_member",
+  "fees",
+  "member_details_section",
   "first_name",
   "last_name",
   "full_name",
   "phone_no",
-  "fees"
+  "column_break_ovnj"
  ],
  "fields": [
   {
@@ -50,11 +53,27 @@
    "fieldname": "fees",
    "fieldtype": "Currency",
    "label": "Fees"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "library_details_section",
+   "fieldtype": "Section Break",
+   "label": "Library Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "member_details_section",
+   "fieldtype": "Section Break",
+   "label": "Member Details"
+  },
+  {
+   "fieldname": "column_break_ovnj",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-07 18:53:44.019358",
+ "modified": "2025-02-04 15:33:31.666659",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library Member",

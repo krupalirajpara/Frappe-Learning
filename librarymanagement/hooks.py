@@ -25,8 +25,10 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/librarymanagement/css/librarymanagement.css"
+app_include_css = "/assets/librarymanagement/css/external_css.css"
 # app_include_js = "/assets/librarymanagement/js/librarymanagement.js"
+app_include_js = ["/assets/librarymanagement/js/remove_collapasble.js"]
+
 
 # include js, css files in header of web template
 # web_include_css = "/assets/librarymanagement/css/librarymanagement.css"
@@ -41,10 +43,17 @@ app_license = "mit"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
-
+   
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_js = { 
+    "Library Membership": "public/js/remove_collpase.js"
+}
+doctype_list_js = {
+    # "Library Membership": "public/js/library_membership.js",
+    # "Library Member": "public/js/library_membership.js",
+
+    # "*": "public/js/library_membership.js"
+}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -148,7 +157,7 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
+scheduler_events = {
 # 	"all": [
 # 		"librarymanagement.tasks.all"
 # 	],
@@ -164,7 +173,12 @@ app_license = "mit"
 # 	"monthly": [
 # 		"librarymanagement.tasks.monthly"
 # 	],
-# }
+    "cron": {
+            "* * * * *":[
+            "librarymanagement.librarymanagement.doctype.library_membership.library_membership.set_status"  
+            ]
+        }
+}
 
 # Testing
 # -------
@@ -242,3 +256,4 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+after_migrate = "librarymanagement.utils.remove_collapse_from_sections" 

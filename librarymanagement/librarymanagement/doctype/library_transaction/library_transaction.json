@@ -6,11 +6,13 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "article",
+  "section_break_cbzv",
   "library_member",
-  "type",
   "date",
-  "amended_from"
+  "amended_from",
+  "section_break_hzul",
+  "article",
+  "type"
  ],
  "fields": [
   {
@@ -54,12 +56,24 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_hzul",
+   "fieldtype": "Section Break",
+   "label": "Article"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_cbzv",
+   "fieldtype": "Section Break",
+   "label": "Library"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-01-07 17:55:01.704820",
+ "modified": "2025-02-04 14:49:59.100068",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library Transaction",
