@@ -1,0 +1,42 @@
+{
+ "chart_name": "general ledger chart",
+ "chart_type": "Report",
+ "creation": "2025-02-06 17:36:04.668764",
+ "custom_options": "{\"x_field\": \"account\", \"chart_type\": \"Bar\", \"y_axis_fields\": [{\"idx\": 1, \"__islocal\": true, \"y_field\": \"debit\", \"color\": \"#2821bf\", \"name\": \"row 1\"}, {\"idx\": 2, \"__islocal\": true, \"y_field\": \"credit\", \"color\": \"#471313\", \"name\": \"row 2\"}, {\"idx\": 3, \"__islocal\": true, \"y_field\": \"balance\", \"color\": \"#39E4A5\", \"name\": \"row 3\"}, {\"idx\": 4, \"__islocal\": true, \"name\": \"row 4\", \"__checked\": 1}], \"y_fields\": [\"debit\", \"credit\", \"balance\"], \"colors\": [\"#2821bf\", \"#471313\", \"#39E4A5\"]}",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{\"company\":\"Demo (Demo)\",\"from_date\":\"2025-01-06\",\"to_date\":\"2025-02-06\",\"account\":[],\"party\":[],\"group_by\":\"Group by Voucher (Consolidated)\",\"cost_center\":[],\"project\":[],\"include_dimensions\":1,\"include_default_book_entries\":1}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "modified": "2025-02-06 17:36:04.705791",
+ "modified_by": "Administrator",
+ "module": "Librarymanagement",
+ "name": "general ledger chart",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "General Ledger",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "x_field": "account",
+ "y_axis": [
+  {
+   "color": "#2821bf",
+   "y_field": "debit"
+  },
+  {
+   "color": "#471313",
+   "y_field": "credit"
+  },
+  {
+   "color": "#39E4A5",
+   "y_field": "balance"
+  },
+  {}
+ ]
+}

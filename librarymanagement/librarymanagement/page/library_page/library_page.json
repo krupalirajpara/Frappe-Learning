@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-02-07 14:47:35.233360",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-02-07 14:47:35.233360",
+ "modified_by": "Administrator",
+ "module": "Librarymanagement",
+ "name": "library-page",
+ "owner": "Administrator",
+ "page_name": "library-page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Library Management System"
+}
