@@ -90,10 +90,9 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "is_calendar_and_gantt": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-02-05 13:40:00.977934",
+ "modified": "2025-02-10 17:52:29.359156",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library Membership",

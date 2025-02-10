@@ -22,16 +22,20 @@
   {
    "chart": "Library Dashboard Chart",
    "width": "Half"
+  },
+  {
+   "chart": "Mebership report Chart",
+   "width": "Half"
   }
  ],
  "creation": "2025-02-06 17:06:46.538366",
  "dashboard_name": "Library",
  "docstatus": 0,
  "doctype": "Dashboard",
- "idx": 3,
+ "idx": 15,
  "is_default": 1,
  "is_standard": 1,
- "modified": "2025-02-07 13:18:06.552288",
+ "modified": "2025-02-10 17:15:42.557433",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library",

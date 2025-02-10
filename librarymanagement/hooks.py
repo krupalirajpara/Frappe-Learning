@@ -27,6 +27,7 @@ app_license = "mit"
 # include js, css files in header of desk.html
 app_include_css = "/assets/librarymanagement/css/external_css.css"
 # app_include_js = "/assets/librarymanagement/js/librarymanagement.js"
+# librarymanagement is a app name
 app_include_js = ["/assets/librarymanagement/js/remove_collapasble.js"]
 
 
