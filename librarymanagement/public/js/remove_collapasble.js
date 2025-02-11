@@ -66,7 +66,6 @@ function removeCollapse(frm) {
     frappe.msgprint("All sections are now permanently expanded.");
 }
 
-
 ///
 frappe.ui.form.on('Sales Invoice', {
     refresh: function(frm) {

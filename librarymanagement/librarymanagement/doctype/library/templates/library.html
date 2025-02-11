@@ -1,0 +1,14 @@
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h1>{{ title }}</h1>
+
+<h3>{{doc.library_name}}</h3>
+{% if doc.photo_of_library %}
+    <img src="{{ doc.photo_of_library }}" alt="Library Photo" style="max-width: 100%; height: auto;">
+{% else %}
+    <p>No image available</p>
+{% endif %}
+{% endblock %}
+
+<!-- this is a sample default web page template -->.

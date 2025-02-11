@@ -42,6 +42,6 @@ frappe.pages['library-page'].on_page_load = function(wrapper) {
 	// $(frappe.render_template("library_page", {})).appendTo(page.body);
 
 	$(frappe.render_template("library_page", {
-		data: " Hello "
+		data: " Hello"
 	})).appendTo(page.body);
 }

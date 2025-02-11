@@ -1,7 +1,8 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "format:Lib-{####}",
+ "autoname": "naming_series:",
  "creation": "2025-01-07 11:18:29.494483",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -19,7 +20,10 @@
   "attach",
   "complete",
   "json_data",
-  "article"
+  "article",
+  "naming_series",
+  "route",
+  "published"
  ],
  "fields": [
   {
@@ -103,16 +107,34 @@
    "fieldname": "library_section",
    "fieldtype": "Section Break",
    "label": "library"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "naming series"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
   }
  ],
+ "has_web_view": 1,
  "image_field": "photo_of_library",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2025-02-05 15:31:16.814370",
+ "modified": "2025-02-11 17:19:09.487069",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library",
- "naming_rule": "Expression",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -137,7 +159,11 @@
    "share": 1
   }
  ],
+ "route": "library_data",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1,
+ "track_seen": 1,
+ "track_views": 1
 }
