@@ -1,0 +1,43 @@
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <div>
+            <h3 class="text-center">Library List</h3>
+            <table>
+                <thead>
+                <th>Library Name</th>
+                <th>Address</th>
+                <th>City</th>
+            </thead>
+            <tbody>
+                {% for lib_member in librarys %}
+                <tr>
+                    <td>{{ lib_member.library_name }}</td>
+                    <td>{{ lib_member.address }}</td>
+                    <td>{{ lib_member.city }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        </div>
+        <table>
+            <h3>Library Member</h3>
+            <thead>
+                <th>Library Member</th>
+                <th>Library</th>
+            </thead>
+            <tbody>
+                {% for i in library_member %}
+                <tr>
+                    <td>{{i.full_name}}</td>
+                    <td>{{i.library_member}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <button type="submit" value="clicked">
+    </body>
+</html>

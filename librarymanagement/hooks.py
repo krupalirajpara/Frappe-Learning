@@ -11,29 +11,39 @@ app_license = "mit"
 # required_apps = []
 
 # Each item in the list will be shown as an app in the apps page
-# add_to_apps_screen = [
-# 	{
-# 		"name": "librarymanagement",
-# 		"logo": "/assets/librarymanagement/logo.png",
-# 		"title": "Librarymanagement",
-# 		"route": "/librarymanagement",
-# 		"has_permission": "librarymanagement.api.permission.has_app_permission"
-# 	}
-# ]
+add_to_apps_screen = [
+	{
+ 		"name": "Library Management",
+		"logo": "/assets/librarymanagement/Logo/logo.jpeg",
+		"title": "Librarymanagement",
+ 		# "route": "/librarymanagement",
+		# "has_permission": "librarymanagement.api.permission.has_app_permission"
+ 	}
+]
 
 # Includes in <head>
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/librarymanagement/css/external_css.css"
+app_include_css = [
+    # "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css",  #light weight no required more storage
+    "/assets/librarymanagement/css/external_css.css", 
+]
+
 # app_include_js = "/assets/librarymanagement/js/librarymanagement.js"
 # librarymanagement is a app name
-app_include_js = ["/assets/librarymanagement/js/remove_collapasble.js"]
+app_include_js = [
+    # "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js",
+    "/assets/librarymanagement/js/remove_collapasble.js",
+]
 
 
 # include js, css files in header of web template
-# web_include_css = "/assets/librarymanagement/css/librarymanagement.css"
+# its affect on webforms not in www templates
+web_include_css = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"  #light weight no required more storage"
 # web_include_js = "/assets/librarymanagement/js/librarymanagement.js"
+web_include_js = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+
 
 # include custom scss in every website theme (without file extension ".scss")
 # website_theme_scss = "librarymanagement/public/scss/website"

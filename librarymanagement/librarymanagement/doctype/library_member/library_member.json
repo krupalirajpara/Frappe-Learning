@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "field:first_name",
+ "autoname": "naming_series:",
  "creation": "2025-01-06 13:26:26.004615",
  "description": "library member",
  "doctype": "DocType",
@@ -15,7 +15,8 @@
   "last_name",
   "full_name",
   "phone_no",
-  "column_break_ovnj"
+  "column_break_ovnj",
+  "naming_series"
  ],
  "fields": [
   {
@@ -35,7 +36,8 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full Name"
+   "label": "Full Name",
+   "read_only": 1
   },
   {
    "fieldname": "phone_no",
@@ -45,6 +47,8 @@
   {
    "fieldname": "library_member",
    "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
    "label": "Library Name",
    "options": "Library",
    "reqd": 1
@@ -69,15 +73,20 @@
   {
    "fieldname": "column_break_ovnj",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Naming Series"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 15:33:31.666659",
+ "modified": "2025-02-12 15:33:33.701950",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library Member",
- "naming_rule": "Expression (old style)",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -93,6 +102,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],

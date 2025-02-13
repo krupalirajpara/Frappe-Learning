@@ -1,4 +1,9 @@
+
 .grid-body {
     overflow-x: auto;
     white-space: nowrap;
+}
+
+.text-center{
+    text-align: center;
 }
