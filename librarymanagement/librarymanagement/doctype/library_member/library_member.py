@@ -35,6 +35,11 @@ def get_naming_series(library_member):
 
     return f"{prefix}{last_number}" 
 
+@frappe.whitelist()
+def receive_post_data():
+    data = frappe.request.data
+    print("data", data)
+    return
 
  # def before_insert(self):
     #     if not self.name:

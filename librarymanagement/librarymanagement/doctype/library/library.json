@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_guest_to_view": 1,
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "naming_series:",
  "creation": "2025-01-07 11:18:29.494483",
@@ -131,7 +132,7 @@
  "is_calendar_and_gantt": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-02-13 16:59:34.395841",
+ "modified": "2025-02-13 18:17:49.634423",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library",

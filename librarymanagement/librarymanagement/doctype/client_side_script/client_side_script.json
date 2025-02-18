@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "field:first_name",
  "creation": "2025-02-04 16:30:46.238339",
@@ -24,7 +25,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-04 16:46:09.856112",
+ "modified": "2025-02-13 18:30:26.633962",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Client side script",

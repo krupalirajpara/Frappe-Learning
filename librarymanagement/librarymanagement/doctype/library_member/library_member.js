@@ -7,10 +7,44 @@ frappe.ui.form.on('Library Member', {
                 library_member: frm.doc.name
             });
         });
+        ///
+
+        frappe.msgprint("Welcome! Show Login USer Name in console using F12!");
+        
+        frappe.db.get_value("User", frappe.session.user, "full_name")
+            .then(response => console.log(response.message.full_name));
+
+        ///
+        frm.add_custom_button(__('Show Data In '), function() {
+            let d = new frappe.ui.Dialog({
+                title: 'Enter details',
+                fields: [
+                    {
+                        label: 'First Name',
+                        fieldname: 'first_name',
+                        fieldtype: 'Data'
+                    },
+                    {
+                        label: 'Last Name',
+                        fieldname: 'last_name',
+                        fieldtype: 'Data'
+                    },
+                ],
+                size: 'small', 
+                primary_action_label: 'Submit',
+                primary_action(values) {
+                    console.log(values);
+                    frappe.msgprint(__('Data Show IN Console: ') + 'First Name: ' + values.first_name + ', Last Name: ' + values.last_name);
+                    d.hide();
+                }
+            });
+            d.show();
+           
+        });
     },
 
     library_member: function (frm) {  
-        if (frm.doc.library_member) {  // Ensure library_member is not empty
+        if (frm.doc.library_member) { 
             frappe.call({
                 method: "librarymanagement.librarymanagement.doctype.library_member.library_member.get_naming_series",
                 args: {
@@ -24,10 +58,9 @@ frappe.ui.form.on('Library Member', {
                 }
             });
         } else {
-            frm.set_value("naming_series", "LIB");  // Default naming series when empty
+            frm.set_value("naming_series", "LIB"); 
         }
-    }
-
+    },
 });
 
 // frappe.ui.form.on('Library Member', {
