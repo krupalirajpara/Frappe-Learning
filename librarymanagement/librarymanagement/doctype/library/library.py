@@ -14,9 +14,15 @@ def get_articles():
     articles = frappe.get_all(
         'Article',
         fields=["article_name", "description"],  # Add other fields as needed
-       
     )
     return articles
+
+@frappe.whitelist(allow_guest=True)
+def get_city(city_name):
+    library_data = frappe.db.get_value(
+        'Library',city_name, "address"
+    )
+    return library_data
 
 def publish_data():
     data = {

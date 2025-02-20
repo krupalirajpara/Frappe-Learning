@@ -55,7 +55,7 @@ web_include_js = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/boo
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
-   
+
 # include js in doctype views
 doctype_js = { 
     "Library Membership": "public/js/remove_collpase.js"
@@ -268,4 +268,5 @@ scheduler_events = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-after_migrate = "librarymanagement.utils.remove_collapse_from_sections" 
+# after_migrate = "librarymanagement.utils.remove_collapse_from_sections" 
+

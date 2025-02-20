@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h3>Library</h3>
+        <form id="library_data"> 
+            <input type="hidden" id="csrf_token" value="{{ token }}">
+            <label>Library Name:</label>
+            <input type="text" name="library_name" id="library_name">
+
+            <label>Address:</label>
+            <input type="text" name="address" id="address">
+
+            <label>City:</label>
+            <input type="text" name="city" id="city">
+
+            <button type="button" onclick="submitForm()"> Submit </button>
+        </form>
+        <div id="response"></div>
+    </div>
+    <script type="module" src="./library_Form.js"></script>  
+  <script>
+  window.onload = function() {
+    document.getElementById('library_data').reset();
+  };
+
+  function submitForm() {
+    const library_name = document.getElementById('library_name').value;
+    const address = document.getElementById('address').value;
+    const city = document.getElementById('city').value;
+    const csrfToken = document.getElementById('csrf_token').value;  // Get CSRF Token
+
+    console.log(library_name, address, city, csrfToken)
+
+    // Prepare data to send to Frappe
+    const formData = {
+      "library_name": library_name,
+      "address": address,
+      "city": city
+    };
+
+    const doctypeData = {
+      "doctype": ""
+    }  
+    const frappeUrl = "http://192.168.2.127:8007/api/resource/Library";
+
+    fetch(frappeUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "X-Frappe-CSRF-Token": csrfToken 
+      },
+      body: JSON.stringify(formData),
+      credentials: "same-origin" 
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.data) {
+        document.getElementById('response').innerText = "Data saved successfully!";
+        document.getElementById('library_data').reset();
+      } else {
+        document.getElementById('response').innerText = "Error saving data.";
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      document.getElementById('response').innerText = "Error saving data.";
+    });
+  }
+</script>  
+
+  </body>
+  
+</html>
+

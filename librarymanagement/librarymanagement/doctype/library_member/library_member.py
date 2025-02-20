@@ -24,7 +24,6 @@ def get_naming_series(library_member):
     """, as_dict=True)
 
     if last_entry:
-        # Extract the number part from the last entry
         last_number = int(last_entry[0]["name"].split('-')[-1])
         last_number += 1 
     else:
