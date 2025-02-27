@@ -24,7 +24,8 @@
   "article",
   "naming_series",
   "route",
-  "published"
+  "published",
+  "text_editor"
  ],
  "fields": [
   {
@@ -124,6 +125,11 @@
    "fieldname": "published",
    "fieldtype": "Check",
    "label": "published"
+  },
+  {
+   "fieldname": "text_editor",
+   "fieldtype": "Text Editor",
+   "label": "Text editor"
   }
  ],
  "has_web_view": 1,
@@ -132,7 +138,7 @@
  "is_calendar_and_gantt": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-02-13 18:17:49.634423",
+ "modified": "2025-02-26 14:42:01.936231",
  "modified_by": "Administrator",
  "module": "Librarymanagement",
  "name": "Library",
